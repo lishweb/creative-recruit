@@ -1,0 +1,236 @@
+/* ================================================
+   Tablet  ( >= 768px )
+   ================================================ */
+@media (min-width: 768px) {
+
+  /* --- Header: switch to desktop nav --- */
+  .header__hamburger {
+    display: none;
+  }
+
+  .header__nav-overlay {
+    display: none;
+  }
+
+  .header__nav {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    transform: none;
+    transition: none;
+    overflow: visible;
+  }
+
+  .header__nav-list {
+    flex-direction: row;
+    align-items: center;
+    gap: 28px;
+  }
+
+  .header__nav-link {
+    padding: 0;
+    font-size: 13px;
+    border-bottom: none;
+  }
+
+  .header__nav-link--cta {
+    display: none;
+  }
+
+  .header__cta {
+    display: inline-block;
+    font-size: 14px;
+    padding: 12px 28px;
+  }
+
+  .header__inner {
+    padding: 20px 40px;
+    gap: 24px;
+  }
+
+  .header__logo {
+    font-size: 20px;
+    margin-right: auto;
+  }
+
+  /* --- Hero --- */
+  .hero {
+    min-height: 90dvh;
+    padding: 120px 40px 80px;
+  }
+
+  .hero__lead {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* --- About: 3 columns --- */
+  .about__points {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  /* --- Growth: 2 columns --- */
+  .growth__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* --- Member: 2 columns --- */
+  .member__cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  /* --- Requirements: 2 columns --- */
+  .requirements__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+  }
+
+  .requirements__dl {
+    grid-template-columns: 6em 1fr;
+  }
+
+  /* --- Flow: horizontal --- */
+  .flow__steps {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    max-width: 100%;
+  }
+
+  .flow__step {
+    padding: 32px 16px;
+  }
+
+  .flow__step::after {
+    top: 50%;
+    bottom: auto;
+    left: auto;
+    right: -8px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 2px;
+  }
+
+  /* --- CTA --- */
+  .cta__inner {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+
+  .button--large {
+    font-size: 18px;
+    padding: 22px 56px;
+  }
+
+  /* --- Footer --- */
+  .footer {
+    padding: 48px 40px;
+  }
+}
+
+
+/* ================================================
+   PC  ( >= 1024px )
+   ================================================ */
+@media (min-width: 1024px) {
+
+  /* --- Header --- */
+  .header__inner {
+    max-width: 1080px;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
+
+  /* --- Hero: left-aligned --- */
+  .hero {
+    justify-content: flex-start;
+    padding: 160px 40px 120px;
+  }
+
+  .hero__content {
+    text-align: left;
+    max-width: var(--container-max-width);
+  }
+
+  .hero__lead {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  /* --- Section title: larger spacing --- */
+  .section__title {
+    margin-bottom: 56px;
+  }
+
+  /* --- About --- */
+  .about__body {
+    text-align: left;
+  }
+
+  .about__points {
+    max-width: 100%;
+    gap: 28px;
+  }
+
+  .about__point {
+    padding: 40px 28px;
+  }
+
+  /* --- Growth --- */
+  .growth__cards {
+    gap: 28px;
+  }
+
+  .growth__card {
+    padding: 40px 32px;
+  }
+
+  /* --- Member --- */
+  .member__cards {
+    gap: 36px;
+  }
+
+  .member__img-wrapper {
+    aspect-ratio: 3 / 2;
+  }
+
+  .member__info {
+    padding: 32px 28px 36px;
+  }
+
+  /* --- Requirements: wider dt --- */
+  .requirements__block {
+    padding: 40px 32px;
+  }
+
+  .requirements__dl {
+    grid-template-columns: 7em 1fr;
+  }
+
+  .requirements__dl dt,
+  .requirements__dl dd {
+    padding: 16px 0;
+  }
+
+  /* --- Flow --- */
+  .flow__step {
+    padding: 36px 20px;
+  }
+
+  /* --- Footer --- */
+  .footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer__links {
+    margin-bottom: 0;
+  }
+}
