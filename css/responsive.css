@@ -52,8 +52,11 @@
   }
 
   .header__logo {
-    font-size: 20px;
     margin-right: auto;
+  }
+
+  .header__logo-img {
+    height: 40px;
   }
 
   /* --- Hero --- */
@@ -147,20 +150,18 @@
     margin: 0 auto;
   }
 
-  /* --- Hero: left-aligned --- */
+  /* --- Hero: centered with larger image --- */
   .hero {
-    justify-content: flex-start;
     padding: 160px 40px 120px;
   }
 
   .hero__content {
-    text-align: left;
+    text-align: center;
     max-width: var(--container-max-width);
   }
 
-  .hero__lead {
-    margin-left: 0;
-    margin-right: 0;
+  .hero__title-img {
+    width: min(70vw, 640px);
   }
 
   /* --- Section title: larger spacing --- */
